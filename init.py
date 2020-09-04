@@ -1,5 +1,5 @@
 import requests
-import cred
+import credentials
 
 client_id = cred.client_id
 client_secret = cred.client_secret
