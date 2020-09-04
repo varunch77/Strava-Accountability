@@ -1,6 +1,6 @@
 import requests
 import urllib3
-import cred
+import credentials
 import pytz
 from datetime import datetime
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
