@@ -1,4 +1,4 @@
-![Strava](https://cdn.road.cc/sites/default/files/styles/schema_org/public/readers-choice-2018-strava-logo-2016.png)
+![Strava](https://www.ride25.com/wp-content/uploads/2014/10/strava_rgb_logotype.png)
 # Strava Accountability
 Many of us make commitments to exercise each day. However, if you’re only accountable to yourself, it's easy to let those commitments slide. Telling someone else about your goals and having someone to be accountable to makes you much more likely to follow through. That's why I wrote this program. It checks Strava everyday at 11 PM and messages a friend if you didn't exercise that day. Just set it up once and let it run everyday.
 
