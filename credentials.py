@@ -1,3 +1,6 @@
 authorization_code = ""
 client_id = ""
 client_secret = ""
+friend_uid = ""
+messenger_email = ""
+messenger_password = ""
