@@ -4,8 +4,6 @@ import credentials
 import pytz
 from datetime import datetime
 import getpass
-from fbchat import Client
-from fbchat.models import *
 from helium import *
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -32,24 +30,15 @@ time_zone = pytz.timezone(my_dataset[0]['timezone'].split(')')[1][1:])
 local_datetime = datetime.now(time_zone)
 local_datetime = local_datetime.strftime("%Y-%m-%d")
 
-#print(local_datetime)
-#print(my_dataset[0]["start_date_local"].split('T')[0])
-
 exercised_today = my_dataset[0]["start_date_local"].split('T')[0] == local_datetime
 print(exercised_today)
 
 if not exercised_today:
-
-    '''
-    client = Client(credentials.messenger_email, credentials.messenger_password)
-    client.send(Message(text="I'm trash and I didn't workout today!"), thread_id=credentials.friend_uid, thread_type=ThreadType.USER)
-    client.logout()
-    '''
     driver = start_chrome('messenger.com/login', headless=True)
     write(credentials.messenger_email, into='Email')
     write(credentials.messenger_password, into='Password')
     click('Continue')
     go_to('messenger.com/t/' + credentials.friend_uid)
-    write("I'm trash and I didn't workout today!", into='Type a message...')
+    write("Enter a custom message", into='Type a message...')
     press(ENTER)
     kill_browser()
