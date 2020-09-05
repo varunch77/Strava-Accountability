@@ -119,7 +119,7 @@ Open Task Scheduler and click on 'Create Task'
 
 Fill in information:
 
-![Create Task - General](https://user-images.githubusercontent.com/48163435/92312933-c4404a00-ef93-11ea-8fcc-873e4c71b4ab.png)
+![Create Task - General](https://user-images.githubusercontent.com/48163435/92313396-74648180-ef99-11ea-8608-8ad1ca5db233.png)
 
 Create a new trigger:
 
