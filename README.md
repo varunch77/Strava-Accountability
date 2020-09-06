@@ -1,3 +1,4 @@
+
 ![Strava](https://www.ride25.com/wp-content/uploads/2014/10/strava_rgb_logotype.png)
 # Strava Accountability
 Many of us make commitments to exercise each day. However, if you’re only accountable to yourself, it's easy to let those commitments slide. Telling someone else about your goals and having someone to be accountable to makes you much more likely to follow through. That's why I wrote this program. It checks Strava everyday at 11 PM and messages a friend if you didn't exercise that day. Just set it up once and let it run everyday.
@@ -133,7 +134,49 @@ Create a new action:
 Instructions coming soon.
 
 ### Linux
-Instructions coming soon.
+
+#### Getting Started
+Your first step is to clone this repository in your home directory:
+
+```bash
+	git clone https://github.com/VarunChilukuri/Strava-Accountability.git
+```
+Then make sure all necessary packages are installed:
+```bash
+    pip install helium
+    pip install pytz
+    pip install urllib3
+```
+Enter into the git repo directory with "cd", and execute the script once to make sure all packages are installed. 
+
+After verifying the script works, exit into the home directory.
+
+Your next step will be to set up the automation. We will do this using crontab. Here is a quick breakdown of how cron expressions work:
+``` 
+Syntax: 
+  mm hh dd mt wd  command
+
+  mm minute 0-59
+  hh hour 0-23
+  dd day of month 1-31
+  mt month 1-12
+  wd day of week 0-7 (Sunday = 0 or 7)
+  command: what you want to run
+  all numeric values can be replaced by * which means all
+```
+We want to execute our script once a day at 11:00 pm. So, we set our minutes value to 0, our hour value to 23 (cron uses a 24 hour clock), and we use "*" to replace every other value.
+
+In your terminal, type this command:
+```bash
+crontab -e
+```
+and then select option 1 (default editor).
+
+You should have entered the Nano (or Vim) text editor, and you should be editing a file. Move your cursor below the commented lines, and enter the following line:
+``` cron
+00 23 * * * python ~/Strava-Accountability/strava.py
+```
+Press Ctrl X, and then make sure you press Y to save.
 
 That's it! Your computer will automatically run the file everyday and message your friend if you don't exercise.
 
