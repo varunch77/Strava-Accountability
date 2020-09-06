@@ -139,13 +139,13 @@ Instructions coming soon.
 Your first step is to clone this repository in your home directory:
 
 ```bash
-	git clone https://github.com/VarunChilukuri/Strava-Accountability.git
+git clone https://github.com/VarunChilukuri/Strava-Accountability.git
 ```
 Then make sure all necessary packages are installed:
 ```bash
-    pip install helium
-    pip install pytz
-    pip install urllib3
+pip install helium
+pip install pytz
+pip install urllib3
 ```
 Enter into the git repo directory with "cd", and execute the script once to make sure all packages are installed. 
 
