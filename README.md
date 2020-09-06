@@ -130,10 +130,7 @@ Create a new action:
 
 ![Create Task - Actions](https://user-images.githubusercontent.com/48163435/92313071-2ea5ba00-ef95-11ea-86a0-46aca2c8a06f.png)
 
-### MacOS
-Instructions coming soon.
-
-### Linux
+### Mac/Linux
 
 #### Getting Started
 Your first step is to clone this repository in your home directory:
