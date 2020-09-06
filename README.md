@@ -21,7 +21,7 @@ These instructions will get you a working  copy of the project up and running on
 [Download Python](https://www.python.org/downloads/)
 
 ### Create a Strava Application
-*Note: Check to see if the location on your Strava profile is accurate. It seems that the default for an account created in the US is Los Angeles and uses the Pacific Time Zone. If the time zones do not match, the program will not always work.*
+*Note: Check to see if the location on your Strava profile is accurate. It seems that the default for an account created in the US is Los Angeles and uses the Pacific Time Zone. If the time zones do not match, the program will not always work. Additionally, ensure that your account has at least one uploaded activity.*
 
 After logging into your Strava account, navigate to [API Settings](https://www.strava.com/settings/api) page to create a developer account.
 
