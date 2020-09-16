@@ -65,7 +65,7 @@ git clone https://github.com/VarunChilukuri/Strava-Accountability.git
 
 Open `credentials.py` and fill out the first three fields (`authorization_code`, `client_id`, and `client_secret`).
 
-Now choose a friend to be your accountability partner and navigate to their  Facebook profile page. Copy and paste the URL into [this website](https://commentpicker.com/find-facebook-id.php) to find their Facebook User ID.
+Now choose a friend to be your accountability partner and navigate to their  Facebook profile page. Copy and paste the URL into [this website](https://www.piliapp.com/facebook/id/) to find their Facebook User ID.
 
 Go back to `credentials.py` and fill out the `friend_uid`, `messenger_email`, and `messenger_password` fields.
 
